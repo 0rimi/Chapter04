@@ -1,24 +1,25 @@
 package com.javaex.ex03;
 
-public class MyList {
+//T -->Point Circle
+public class MyList<T> { //잘바바 꺽쇠
 	
-	private Object[] oArray;
+	private T[] oArray; //잘보라구 꺽쇠
 	private int crtPos;
 	
 	
 	public MyList() {
-		this.oArray = new Object[3];
+		this.oArray = (T[])new Object[3]; //<배열형변환
 		this.crtPos = 0;
 	}
 	
 	
 	
-	public void add(Object obj) {
+	public void add(T obj) {
 		oArray[crtPos] = obj;
 		crtPos++;
 	}
-	public Object get(int i) {
-		Object result = oArray[i];
+	public T get(int i) {
+		T result = oArray[i];
 		return result;
 	}
 	public int size() {
