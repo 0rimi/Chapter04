@@ -29,10 +29,25 @@ public class Point {
 	}
 	
 	
-	
+	//메소드일반
 	@Override
 	public String toString() {
 		return "Point [x=" + x + ", y=" + y + "]";
+	}	
+	@Override
+	public int hashCode() {		
+		return this.x+this.y;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if(this.x==((Point)obj).getX()
+				&& this.y==((Point)obj).getY()) {
+			return true;	
+		}
+		else {	
+			return false;
+		}
 	}
 	
+
 }

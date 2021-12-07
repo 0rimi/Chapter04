@@ -1,6 +1,7 @@
 package com.javaex.ex04;
 
 import java.util.ArrayList;
+//import java.util.LinkedList;
 import java.util.List;
 
 public class Ex01 {
@@ -11,7 +12,10 @@ public class Ex01 {
 		Point p02 = new Point(9,13);
 		Point p03 = new Point(8,14);
 		
+		//add, get, remove, size
+		
 		List<Point> pList = new ArrayList<Point>();
+		//List<Point> pList = new LinkedList<Point>();
 		pList.add(p01); //ArrayList 위의 인터페이스 List의
 		pList.add(p02);
 		pList.add(p03);
